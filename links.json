@@ -1,0 +1,304 @@
+{
+  "iframes": [
+    {
+      "id": "1",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=H1HD"
+    },
+    {
+      "id": "2",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=E1HD"
+    },
+    {
+      "id": "3",
+      "name": "Star Sports English 2 ",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=E2SD"
+    },
+    {
+      "id": "4",
+      "name": "Star Sports 2 hindi",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/?id=1984"
+    },
+    {
+      "id": "5",
+      "name": "Star Sports English 3 ",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=H2HD"
+    },
+    {
+      "id": "6",
+      "name": "Star Sports",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=SS3"
+    },
+    {
+      "id": "7",
+      "name": "Willow Cricbuzz",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://otte.cache.aiv-cdn.net/bom-nitro/enc/zp4zc7ykfs/out/v1/647383d571d44fb680e8e826f604db2b/cenc.mpd?|drmScheme=clearkey&drmLicense=5ce45f6a1c4ff0cca79f1fcb2f0161d5:d6dba1c59cc9c34a53deb95d47a6ae99"
+    },
+    {
+      "id": "8",
+      "name": "Sony Sports 1",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-jiotv.vercel.app/?id=3531"
+    },
+    {
+      "id": "9",
+      "name": "sony sports Hindi",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=STEN3"
+    },
+    {
+      "id": "10",
+      "name": "sony sports 5",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-jiotv.vercel.app/?id=3531"
+    },
+    {
+      "id": "11",
+      "name": "Willow Cricbuzz",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://sportlink-10.lovable.app/api/public/proxy?url=https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/1runwqpk0c/out/v1/0ae93e8fb1534fff812de48245f4516c/cenc.mpd?&keys=4a822aaf010c2bd57b138e3733c6a2c0:f8c4fbf1f95f17a91b19250e573e55fe"
+    },
+    {
+      "id": "12",
+      "name": "star sports Hindi 2",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/?id=1984"
+    },
+    {
+      "id": "13",
+      "name": "i phone",
+      "type": "iframe",
+      "iframeSrc": "https://tv4wav2.pages.dev/?link=27"
+    },
+    {
+      "id": "14",
+      "name": "sony sports tamil",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app?id=STENT"
+    },
+    {
+      "id": "15",
+      "name": "Sony Sports Telugu",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app?id=STENTU"
+    },
+    {
+      "id": "16",
+      "name": "sony sports 5",
+      "type": "https://cricket-yoddha-channel-list.vercel.app?id=STEN5",
+      "iframeSrc": ""
+    },
+    {
+      "id": "17",
+      "name": "tapmad",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-3.vercel.app/"
+    },
+    {
+      "id": "18",
+      "name": "Sony Set",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-jiotv.vercel.app/?id=291"
+    },
+    {
+      "id": "19",
+      "name": "Star sports Tamil",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=T1HD"
+    },
+    {
+      "id": "20",
+      "name": "star sports Telugu",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=TE1HD"
+    },
+    {
+      "id": "21",
+      "name": "Star sports Kannada",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=KA1SD"
+    },
+    {
+      "id": "22",
+      "name": "Fancode Free",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://sportlink-10.lovable.app/api/public/proxy?url=https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd?&keys=82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca"
+    },
+    {
+      "id": "23",
+      "name": "Channel 23",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha.vercel.app/?url=https://amg01269-amg01269c1-sportstribal-emea-5204.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8"
+    },
+    {
+      "id": "24",
+      "name": "TNT SPORTS 1",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://sportlink-10.lovable.app/api/public/proxy?url=https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd?&keys=69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749"
+    },
+    {
+      "id": "25",
+      "name": "TNT SPORTS 2",
+      "type": "iframe",
+      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://sportlink-10.lovable.app/api/public/proxy?url=https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd?&keys=f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b"
+    },
+    {
+      "id": "26",
+      "name": "Channel 26",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "27",
+      "name": "Channel 27",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "28",
+      "name": "Channel 28",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "29",
+      "name": "Channel 29",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "30",
+      "name": "Channel 30",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "31",
+      "name": "Channel 31",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "32",
+      "name": "Channel 32",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "33",
+      "name": "Channel 33",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "34",
+      "name": "Channel 34",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "35",
+      "name": "Channel 35",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "36",
+      "name": "Channel 36",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "37",
+      "name": "Channel 37",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "38",
+      "name": "Channel 38",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "39",
+      "name": "Channel 39",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "40",
+      "name": "Channel 40",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "41",
+      "name": "Channel 41",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "42",
+      "name": "Channel 42",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "43",
+      "name": "Channel 43",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "44",
+      "name": "Channel 44",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "45",
+      "name": "Channel 45",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "46",
+      "name": "Channel 46",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "47",
+      "name": "Channel 47",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "48",
+      "name": "Channel 48",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "49",
+      "name": "Channel 49",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "50",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": ""
+    }
+  ]
+}
