@@ -229,22 +229,22 @@
       "iframeSrc": ""
     },
     {
-      "id": "39",
+      "id": "tamil",
       "name": "Channel 39",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=T1HD"
     },
     {
-      "id": "40",
+      "id": "telugu",
       "name": "Channel 40",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=TE1HD"
     },
     {
-      "id": "41",
+      "id": "kannada",
       "name": "Channel 41",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=KA1SD"
     },
     {
       "id": "42",
