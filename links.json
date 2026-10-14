@@ -1,16 +1,16 @@
 {
   "iframes": [
     {
-      "id": "1",
+      "id": "hindi",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=H1HD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=H1HD"
     },
     {
-      "id": "2",
+      "id": "eng",
       "name": "Star Sports HD 1",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=E1HD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=E1HD"
     },
     {
       "id": "3",
