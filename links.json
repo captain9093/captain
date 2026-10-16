@@ -13,16 +13,16 @@
       "iframeSrc": "https://streamxcricket.pages.dev/son?id=E1HD"
     },
     {
-      "id": "3",
-      "name": "Star Sports English 2 ",
-      "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=E2SD"
-    },
-    {
-      "id": "4",
+      "id": "star2h",
       "name": "Star Sports 2 hindi",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/?id=1984"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=H2HD"
+    },
+    {
+      "id": "star2e",
+      "name": "Star Sports 2 english",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=E2HD"
     },
     {
       "id": "5",
