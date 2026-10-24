@@ -25,16 +25,16 @@
       "iframeSrc": "https://streamxcricket.pages.dev/son?id=E2HD"
     },
     {
-      "id": "5",
+      "id": "star3",
       "name": "Star Sports English 3 ",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=H2HD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=H2HD"
     },
     {
       "id": "6",
       "name": "Star Sports",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=SS3"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=SS3"
     },
     {
       "id": "willow",
@@ -49,16 +49,16 @@
       "iframeSrc": "https://streamxcricket.pages.dev/eng"
     },
     {
-      "id": "9",
+      "id": "sonyhindi",
       "name": "sony sports Hindi",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=STEN3"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STEN3"
     },
     {
       "id": "10",
       "name": "sony sports 5",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-jiotv.vercel.app/?id=3531"
+      "iframeSrc": ""
     },
     {
       "id": "11",
@@ -91,9 +91,9 @@
       "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app?id=STENTU"
     },
     {
-      "id": "16",
+      "id": "sony5",
       "name": "sony sports 5",
-      "type": "https://cricket-yoddha-channel-list.vercel.app?id=STEN5",
+      "type": "https://streamxcricket.pages.dev/son2?id=STEN5",
       "iframeSrc": ""
     },
     {
@@ -109,22 +109,22 @@
       "iframeSrc": "https://cricket-yoddha-jiotv.vercel.app/?id=291"
     },
     {
-      "id": "19",
+      "id": "startamil",
       "name": "Star sports Tamil",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=T1HD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=T1HD"
     },
     {
-      "id": "20",
+      "id": "startelugu",
       "name": "star sports Telugu",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=TE1HD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=TE1HD"
     },
     {
       "id": "21",
       "name": "Star sports Kannada",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app/K.html?id=KA1SD"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=KA1SD"
     },
     {
       "id": "22",
