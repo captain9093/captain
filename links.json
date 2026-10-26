@@ -49,7 +49,7 @@
       "iframeSrc": "https://streamxcricket.pages.dev/eng"
     },
     {
-      "id": "sonyhindi",
+      "id": "sony3hindi",
       "name": "sony sports Hindi",
       "type": "iframe",
       "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STEN3"
@@ -85,10 +85,10 @@
       "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENTU"
     },
     {
-      "id": "15",
+      "id": "sonytelugu",
       "name": "Sony Sports Telugu",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-channel-list.vercel.app?id=STENTU"
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STENTU"
     },
     {
       "id": "sony5",
@@ -163,28 +163,28 @@
       "iframeSrc": "https://cust-1zx.pages.dev/pak"
     },
     {
-      "id": "28",
-      "name": "Channel 28",
+      "id": "sony1",
+      "name": "sony 1",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STEN1"
     },
     {
-      "id": "29",
-      "name": "Channel 29",
+      "id": "sony2",
+      "name": "sony 2",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STEN2"
     },
     {
-      "id": "30",
-      "name": "Channel 30",
+      "id": "sony5",
+      "name": "sony 5",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=STEN5"
     },
     {
-      "id": "31",
-      "name": "Channel 31",
+      "id": "khel",
+      "name": "star sport khel",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/son2?id=SSK"
     },
     {
       "id": "32",
