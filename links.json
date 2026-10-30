@@ -259,16 +259,16 @@
       "iframeSrc": "https://streamxcricket-85c.pages.dev/iframe?id=ten3-hd"
     },
     {
-      "id": "44",
+      "id": "ios9",
       "name": "Channel 44",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/ioseng?id=sony_ten_3_hd_15"
     },
     {
-      "id": "45",
+      "id": "ios10",
       "name": "Channel 45",
       "type": "iframe",
-      "iframeSrc": ""
+      "iframeSrc": "https://streamxcricket.pages.dev/ioseng?id=sony_ten_5_hd_19"
     },
     {
       "id": "fan",
@@ -296,6 +296,19 @@
     },
     {
       "id": "50",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": ""
+    }
+    ,
+    {
+      "id": "51",
+      "name": "Channel 49",
+      "type": "iframe",
+      "iframeSrc": ""
+    },
+    {
+      "id": "52",
       "name": "Channel 50",
       "type": "iframe",
       "iframeSrc": ""
