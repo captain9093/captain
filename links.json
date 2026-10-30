@@ -250,7 +250,7 @@
       "id": "ios7",
       "name": "Channel 42",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket-85c.pages.dev/iframe?id=ten5"
+      "iframeSrc": "https://streamxcricket-85c.pages.dev/player?url=https://stream.ottplus.live/live/ten_1_hd_abr/live/ten_1_hd_720/chunks.m3u8"
     },
     {
       "id": "ios8",
