@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="referrer" content="no-referrer">
+    <title>Live Player</title>
+
+    <!-- Preconnect for instant network response -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #player-container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        #plyr-player {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: black;
+        }
+
+        .plyr__poster {
+            background-color: black !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="player-container">
+        <video id="plyr-player" controls playsinline muted autoplay preload="auto"></video>
+    </div>
+
+    <script>
+        const videoSrc = new URLSearchParams(window.location.search).get('url');
+        const video = document.getElementById('plyr-player');
+
+        if (videoSrc) {
+            // Initialize Plyr with standard settings (Normal speed by default)
+            const player = new Plyr(video, {
+                autoplay: true,
+                muted: true,
+                settings: ['quality', 'speed', 'loop'],
+                quality: {
+                    default: 720,
+                    options: [1080, 720, 480, 360],
+                    forced: true,
+                    onChange: (newQuality) => {
+                        if (window.hlsInstance) {
+                            window.hlsInstance.levels.forEach((level, index) => {
+                                if (level.height === newQuality) window.hlsInstance.currentLevel = index;
+                            });
+                        }
+                    }
+                }
+            });
+
+            if (Hls.isSupported()) {
+                const hls = new Hls({
+                    liveSyncDurationCount: 0,
+                    lowLatencyMode: true,
+                    enableWorker: true,
+                    fragLoadingTimeOut: 20000,
+                    manifestLoadingTimeOut: 10000
+                });
+
+                window.hlsInstance = hls;
+
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+
+                // Instant normal playback
+                video.playbackRate = 1.0;
+                video.play().catch(() => {});
+
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    const availableQualities = hls.levels
+                        .map(l => l.height)
+                        .filter((v, i, a) => a.indexOf(v) === i)
+                        .sort((a, b) => b - a);
+
+                    if (availableQualities.length > 0) {
+                        player.config.quality.options = availableQualities;
+                        player.config.quality.default = availableQualities[0];
+                    }
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+                video.playbackRate = 1.0;
+                video.play().catch(() => {});
+            } else {
+                video.src = videoSrc;
+                video.playbackRate = 1.0;
+                video.play().catch(() => {});
+            }
+        }
+    </script>
+</body>
+</html>
