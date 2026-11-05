@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>TG_@streamxcricket</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.js" crossorigin="anonymous"></script>
+<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;background:#000;overflow:hidden;font-family:sans-serif;}
+body{background-color:#000;}
+
+.video-container{
+  position:relative;
+  width:100%;
+  height:100%;
+  background:#000;
+}
+
+#player-wrap{
+  position:absolute;
+  inset:0;
+}
+
+#video{
+  width:100%;
+  height:100%;
+}
+
+/* Hide Shaka spinner */
+.shaka-spinner-container,
+.shaka-buffering-spinner,
+.shaka-spinner {
+  display:none!important;
+}
+
+/* ✅ Keep Shaka's bottom bar pinned to the bottom on mobile */
+.shaka-bottom-controls {
+  bottom: 0 !important;
+  top: auto !important;
+}
+
+#status{
+  position:fixed;
+  left:12px;
+  bottom:12px;
+  z-index:5;
+  color:rgba(255,255,255,.9);
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:8px;
+  padding:6px 10px;
+  font-size:12px;
+  max-width:88vw;
+}
+
+#status:empty{
+  display:none;
+}
+</style>
+</head>
+<body>
+<div class="video-container">
+  <div id="player-wrap" data-shaka-player-container>
+    <video autoplay muted playsinline data-shaka-player id="video"></video>
+  </div>
+</div>
+
+<div id="status"></div>
+
+<script>
+function showStatus(text){
+  var s = document.getElementById('status');
+  if (s) s.textContent = text;
+}
+
+function onPlayerError(error){
+  var code = error && error.code ? error.code : 'UNKNOWN';
+  console.error('Shaka error', error);
+  showStatus('Stream failed (' + code + ')');
+}
+
+// ---------- Fetch stream URL from GitHub JSON by ?id= ----------
+const JSON_URL = 'https://raw.githubusercontent.com/drmlive/fancode-live-events/refs/heads/main/fancode.json';
+
+async function fetchStreamUrlById(matchId) {
+  if (!matchId) return null;
+  try {
+    showStatus('Fetching stream data…');
+    const resp = await fetch(JSON_URL, { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+
+    const json = await resp.json();
+
+    const matches = Array.isArray(json) ? json : (json.matches || []);
+    if (!matches.length) throw new Error('No matches array found');
+
+    const target = String(matchId).trim().toLowerCase();
+    const item = matches.find(m => String(m.match_id || '').trim().toLowerCase() === target);
+
+    if (!item) {
+      console.warn('No match found for id:', matchId);
+      return null;
+    }
+
+    const url = item.adfree_url || item.dai_url || null;
+    if (url) {
+      console.log('✅ Found stream for', matchId, '→', url.slice(0, 120) + '…');
+    } else {
+      console.warn('Match found but no stream URL (status: ' + item.status + ')', item);
+    }
+    return url;
+  } catch (e) {
+    console.error('JSON fetch/parse error:', e);
+    showStatus('Failed to load stream list');
+    return null;
+  }
+}
+
+function getMatchId(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get('id');
+}
+
+// ---------- Playback logic ----------
+function isNativeStream(streamUrl){
+  var u = streamUrl.toLowerCase();
+  return u.includes("fancode") || u.includes("sonydaime");
+}
+
+// ✅ State for native fallback recovery
+let currentStreamUrl = null;
+let nativeMode = false;
+let userPaused = false;
+let nativeRecoveryPending = false;
+
+async function playNativeWithShakaUI(streamUrl){
+  const video = document.getElementById('video');
+  if (!video) return;
+  video.removeAttribute('poster');
+
+  const ui = video.ui;
+  const controls = ui ? ui.getControls() : null;
+  const player = controls ? controls.getPlayer() : null;
+
+  // ✅ unload Shaka but don't destroy UI (keeps control DOM intact)
+  if (player) {
+    try { await player.unload(); } catch(e) { /* ignore */ }
+  }
+
+  video.muted = true;
+  video.playsInline = true;
+  video.src = streamUrl;
+  video.load();
+
+  // ✅ persistent handler (not {once:true}) so we can ignore ad-tab switches
+  if (!nativeMode) {
+    video.addEventListener('error', onNativeError);
+  }
+  nativeMode = true;
+  currentStreamUrl = streamUrl;
+
+  try {
+    await video.play();
+    showStatus('');
+  } catch(e) {
+    console.log("Autoplay blocked completely.", e);
+    showStatus('Tap to play');
+  }
+}
+
+function onNativeError(){
+  // Ignore errors that happen while the page is hidden (ad redirect) or user paused
+  if (document.visibilityState === 'hidden') return;
+  if (userPaused) return;
+  const video = document.getElementById('video');
+  if (!video || !video.error) return;
+
+  console.warn('Native media error:', video.error.code, video.error.message);
+
+  // One auto-retry (handles the "returned from ad tab" transient failure)
+  if (currentStreamUrl && !nativeRecoveryPending) {
+    nativeRecoveryPending = true;
+    setTimeout(() => {
+      nativeRecoveryPending = false;
+      if (nativeMode && currentStreamUrl && !userPaused && document.visibilityState === 'visible') {
+        playNativeWithShakaUI(currentStreamUrl);
+      }
+    }, 1200);
+    return;
+  }
+  showStatus('Native playback failed');
+}
+
+async function initPlayer(){
+  if (!window.shaka || !shaka.Player || !shaka.Player.isBrowserSupported()) {
+    showStatus('Browser not supported');
+    return;
+  }
+
+  var matchId = getMatchId();
+  if (!matchId) {
+    showStatus('No match ID. Use ?id=4250387_ENG');
+    return;
+  }
+
+  var streamUrl = await fetchStreamUrlById(matchId);
+  if (!streamUrl) {
+    showStatus('Stream not found for ID: ' + matchId);
+    return;
+  }
+
+  currentStreamUrl = streamUrl;
+
+  if (isNativeStream(streamUrl)) {
+    await playNativeWithShakaUI(streamUrl);
+    return;
+  }
+
+  nativeMode = false;
+
+  shaka.polyfill.installAll();
+  const video = document.getElementById('video');
+  if (!video || !video.ui) { setTimeout(initPlayer, 80); return; }
+
+  const ui = video.ui;
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+
+  player.addEventListener('error', function(ev){ onPlayerError(ev.detail); });
+  controls.addEventListener('error', function(ev){ onPlayerError(ev.detail); });
+
+  // ✅ Added addSeekBar so seek bar renders in the BOTTOM controls on mobile
+  ui.configure({
+    controlPanelElements:["play_pause","mute","volume","spacer","time_and_duration","quality","fullscreen","overflow_menu"],
+    addSeekBar: true
+  });
+
+  player.configure({
+    streaming:{bufferingGoal:20,rebufferingGoal:2,bufferBehind:20}
+  });
+
+  try{
+    await player.load(streamUrl);
+    showStatus('');
+    video.muted = true;
+    video.play().catch(function(){});
+  }catch(e){
+    onPlayerError(e);
+  }
+}
+
+function initFailed(){
+  showStatus('Unable to load Shaka UI');
+}
+
+document.addEventListener('shaka-ui-loaded', initPlayer);
+document.addEventListener('shaka-ui-load-failed', initFailed);
+
+// ✅ Track user pause so native error recovery doesn't fight the user
+document.getElementById('video').addEventListener('pause', function(){
+  if (document.visibilityState === 'visible' && !nativeRecoveryPending) {
+    userPaused = true;
+  }
+});
+document.getElementById('video').addEventListener('play', function(){
+  userPaused = false;
+});
+
+// ✅ When returning from ad tab, resume native playback
+document.addEventListener('visibilitychange', function(){
+  if (document.visibilityState !== 'visible') return;
+  if (!nativeMode || !currentStreamUrl || userPaused) return;
+  const video = document.getElementById('video');
+  if (video && video.paused) {
+    video.play().catch(function(){});
+  }
+});
+
+if ('wakeLock' in navigator) navigator.wakeLock.request('screen').catch(function(){});
+</script>
+</body>
+</html>
