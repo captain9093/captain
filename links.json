@@ -313,5 +313,19 @@
       "type": "iframe",
       "iframeSrc": ""
     }
+    
+    ,
+    {
+      "id": "star1h",
+      "name": "Channel 49",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=H1HD"
+    },
+    {
+      "id": "star1e",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=E1HD"
+    }
   ]
 }
