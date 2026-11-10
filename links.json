@@ -106,7 +106,7 @@
       "id": "pak",
       "name": "Sony Set",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HPPTT7SW"
+      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HLVY22CY"
     },
     {
       "id": "startamil",
@@ -326,6 +326,13 @@
       "name": "Channel 50",
       "type": "iframe",
       "iframeSrc": "https://streamxcricket.pages.dev/son?id=E1HD"
+    },
+    
+    {
+      "id": "u19",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HKJV3KJQ"
     }
   ]
 }
