@@ -342,5 +342,21 @@
       "type": "iframe",
       "iframeSrc": "https://cust-1zx.pages.dev/t10"
     }
+    ,
+    
+    {
+      "id": "euro",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink10-ajp.pages.dev/cc2?id=EURO"
+    }
+    ,
+    
+    {
+      "id": "55",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://cust-1zx.pages.dev/t10"
+    }
   ]
 }
