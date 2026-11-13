@@ -345,10 +345,10 @@
     ,
     
     {
-      "id": "euro5",
+      "id": "euro",
       "name": "Channel 50",
       "type": "iframe",
-      "iframeSrc": "https://sportlink10-ajp.pages.dev/cc2?id=EURO"
+      "iframeSrc": "https://streamxcricket.pages.dev/drm?url=https://wbd.skandha.tv/EuroSport_HD/EuroSport_HD.isml/.mpd|drmScheme=clearkey&drmLicense=12ed56d780abcfebcd23aa27e4ac5015:6784567890abcfebcd23aa27e4ac2814"
     }
     ,
     
