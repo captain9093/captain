@@ -345,7 +345,7 @@
     ,
     
     {
-      "id": "euro",
+      "id": "euro5",
       "name": "Channel 50",
       "type": "iframe",
       "iframeSrc": "https://sportlink10-ajp.pages.dev/cc2?id=EURO"
