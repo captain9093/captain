@@ -401,5 +401,18 @@
       "type": "iframe",
       "iframeSrc": "https://cust-1zx.pages.dev/t10"
     }
+    ,
+    {
+      "id": "iosh",
+      "name": "Channel 44",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S3"
+    },
+    {
+      "id": "iose",
+      "name": "Channel 45",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S1"
+    }
   ]
 }
