@@ -366,26 +366,47 @@
       "iframeSrc": "https://streamxcricket.pages.dev/son?id=H1HD"
     },
     {
-      "id": "88",
+      "id": "skhel",
       "name": "Channel 50",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/son?id=E1HD"
+      "iframeSrc": "https://streamxcricket-85c.pages.dev/sonu?id=SSK"
     },
     
     {
-      "id": "89",
+      "id": "select1hd",
       "name": "Channel 50",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HMBL7QDV"
+      "iframeSrc": "https://streamxcricket-85c.pages.dev/sonu?id=ST1HD"
     }
     ,
     
     {
-      "id": "90",
+      "id": "select2hd",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket-85c.pages.dev/sonu?id=ST2HD"
+    }
+    ,
+    {
+      "id": "select1",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=ST1SD"
+    },
+    
+    {
+      "id": select2",
+      "name": "Channel 50",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket-85c.pages.dev/sonu?id=ST2SD"
+    }
+    ,
+    
+    {
+      "id": "93",
       "name": "Channel 50",
       "type": "iframe",
       "iframeSrc": "https://cust-1zx.pages.dev/t10"
     }
-    
   ]
 }
