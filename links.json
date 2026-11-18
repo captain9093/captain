@@ -127,10 +127,10 @@
       "iframeSrc": "https://streamxcricket.pages.dev/son2?id=KA1SD"
     },
     {
-      "id": "22",
+      "id": "psport",
       "name": "Fancode Free",
       "type": "iframe",
-      "iframeSrc": "https://cricket-yoddha-live.vercel.app/?url=https://sportlink-10.lovable.app/api/public/proxy?url=https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd?&keys=82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca"
+      "iframeSrc": "https://streamxcricket.pages.dev/drm?url=https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd&keys=1a5df53609ebc9857898c490f4724918:77f62980d582ec541280796acf8b2d19"
     },
     {
       "id": "aus",
