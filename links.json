@@ -415,13 +415,13 @@
       "iframeSrc": "https://sportlink-json.pages.dev/S1"
     },
     {
-      "id": "hindi2",
+      "id": "hindi-2",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
       "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN3"
     },
     {
-      "id": "eng2",
+      "id": "eng-2",
       "name": "Star Sports HD 1",
       "type": "iframe",
       "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN1"
