@@ -214,7 +214,7 @@
       "id": "willow3",
       "name": "Channel 36",
       "type": "iframe",
-      "iframeSrc": "https://cust-1zx.pages.dev/willow3"
+      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HHN8W74B"
     },
     {
       "id": "wbbl",
@@ -413,6 +413,54 @@
       "name": "Channel 45",
       "type": "iframe",
       "iframeSrc": "https://sportlink-json.pages.dev/S1"
+    },
+    {
+      "id": "hindi2",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN3"
+    },
+    {
+      "id": "eng2",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN1"
+    },
+    {
+      "id": "tam2",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENT"
+    },
+    {
+      "id": "tel2",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENTU"
+    },
+    {
+      "id": "kannada2",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENK"
+    },
+    {
+      "id": "ih",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S3"
+    },
+    {
+      "id": "ie",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S1"
+    },
+    {
+      "id": "ih2",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN1"
     }
   ]
 }
