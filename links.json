@@ -461,6 +461,18 @@
       "name": "Star Sports HD 1",
       "type": "iframe",
       "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN1"
+    },
+    {
+      "id": "ih",
+      "name": "Star Sports HD 1",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S3"
+    },
+    {
+      "id": "ie",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://sportlink-json.pages.dev/S1"
     }
   ]
 }
