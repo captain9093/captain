@@ -473,6 +473,12 @@
       "name": "Star Sports Hindi 1",
       "type": "iframe",
       "iframeSrc": "https://sportlink-json.pages.dev/S1"
+    },
+    {
+      "id": "multi",
+      "name": "Star Sports Hindi 1",
+      "type": "iframe",
+      "iframeSrc": "https://cricklylive.com/iframe?id=qQNUlQhN1xUOJerVBGNk"
     }
   ]
 }
