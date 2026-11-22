@@ -445,13 +445,13 @@
       "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENK"
     },
     {
-      "id": "ih",
+      "id": "iph",
       "name": "Star Sports HD 1",
       "type": "iframe",
       "iframeSrc": "https://sportlink-json.pages.dev/S3"
     },
     {
-      "id": "ie",
+      "id": "ipe",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
       "iframeSrc": "https://sportlink-json.pages.dev/S1"
