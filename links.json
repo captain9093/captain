@@ -418,13 +418,13 @@
       "id": "hindi-2",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STEN3"
+      "iframeSrc": "https://streamxcricket.pages.dev/hindi"
     },
     {
       "id": "eng-2",
       "name": "Star Sports HD 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/crickbuzz?id=B0HQTF8G33"
+      "iframeSrc": "https://streamxcricket.pages.dev/eng"
     },
     {
       "id": "tam2",
