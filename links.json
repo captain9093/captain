@@ -4,13 +4,13 @@
       "id": "hindi",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/hindi"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STEN3"
     },
     {
       "id": "eng",
       "name": "Star Sports HD 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/eng"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STEN1"
     },
     {
       "id": "star2h",
@@ -418,25 +418,25 @@
       "id": "hindi-2",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/hindi"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STEN3"
     },
     {
       "id": "eng-2",
       "name": "Star Sports HD 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/eng"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STEN1"
     },
     {
       "id": "tam2",
       "name": "Star Sports Hindi 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENT"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STENT"
     },
     {
       "id": "tel2",
       "name": "Star Sports HD 1",
       "type": "iframe",
-      "iframeSrc": "https://streamxcricket.pages.dev/new?id=STENTU"
+      "iframeSrc": "https://streamxcricket.pages.dev/son?id=STENTU"
     },
     {
       "id": "kannada2",
